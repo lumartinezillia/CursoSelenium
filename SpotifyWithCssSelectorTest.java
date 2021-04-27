@@ -15,7 +15,7 @@ public class SpotifyWithCssSelectorTest {
     }
 
     @Test
-    public void spotifyByPlaceHolderTest() {
+    public void spotifyByPlaceHolderTest() throws InterruptedException {
         WebDriver driver = getSpotifyDriver();
         WebElement correo = driver.findElement(By.cssSelector("input[placeholder='Introduce tu correo electrónico.']"));
         WebElement confirmarCorreo = driver.findElement(By.cssSelector("input[placeholder='Vuelve a introducir tu correo electrónico.']"));
